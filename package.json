@@ -1,0 +1,45 @@
+{
+  "name": "angular-position",
+  "version": "1.0.0",
+  "description": "A set of angular directives that allow to align elements according to another one's position, as well as another set that allow to quickly apply CSS positioning properties.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^2.0.0",
+    "rxjs": "^5.0.0-beta.12"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-typescript": "^3.1.4",
+    "merge2": "^1.0.2",
+    "typescript": "^2.0.0"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiocarneiro/angular-position.git"
+  },
+  "keywords": [
+    "angular",
+    "interface",
+    "positioning",
+    "aligment",
+    "element",
+    "directive",
+    "above",
+    "below",
+    "left",
+    "right"
+  ],
+  "author": "Sérgio Carneiro <sergio.carneiro21@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiocarneiro/angular-position/issues"
+  },
+  "homepage": "https://github.com/sergiocarneiro/angular-position#readme"
+}
