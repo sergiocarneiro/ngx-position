@@ -1,6 +1,6 @@
 {
   "name": "angular-position",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of angular directives that allow to align elements according to another one's position, as well as another set that allow to quickly apply CSS positioning properties.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
