@@ -11,9 +11,9 @@ import { Directive, ElementRef, Input } from '@angular/core';
 export class RightPositionDirective
 {
     /**
-     * The distance, in pixels, from right.
+     * The distance from right.
      */
-    @Input() right: number;
+    @Input() right: string;
 
     private element: HTMLElement;
 
@@ -22,6 +22,6 @@ export class RightPositionDirective
     }
 
     ngOnInit() {
-        this.element.style.right = this.right + "px";
+        this.element.style.right = this.right;
     }
 }

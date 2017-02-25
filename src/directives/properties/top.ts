@@ -11,9 +11,9 @@ import { Directive, ElementRef, Input } from '@angular/core';
 export class TopPositionDirective
 {
     /**
-     * The distance, in pixels, from top.
+     * The distance from top.
      */
-    @Input() top: number;
+    @Input() top: string;
 
     private element: HTMLElement;
 
@@ -22,6 +22,6 @@ export class TopPositionDirective
     }
 
     ngOnInit() {
-        this.element.style.top = this.top + "px";
+        this.element.style.top = this.top;
     }
 }

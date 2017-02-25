@@ -11,9 +11,9 @@ import { Directive, ElementRef, Input } from '@angular/core';
 export class BottomPositionDirective
 {
     /**
-     * The distance, in pixels, from bottom.
+     * The distance from bottom.
      */
-    @Input() bottom: number;
+    @Input() bottom: string;
 
     private element: HTMLElement;
 
@@ -22,6 +22,6 @@ export class BottomPositionDirective
     }
 
     ngOnInit() {
-        this.element.style.bottom = this.bottom + "px";
+        this.element.style.bottom = this.bottom;
     }
 }

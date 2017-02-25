@@ -33,6 +33,10 @@ export { RightPositionDirective };
 export { TopPositionDirective };
 export { BottomPositionDirective };
 
+import { ZIndexDirective, ZDirective } from "./directives/properties/z-index";
+export { ZIndexDirective };
+export { ZDirective };
+
 @NgModule(
 {
     declarations:
@@ -50,7 +54,10 @@ export { BottomPositionDirective };
         LeftPositionDirective,
         RightPositionDirective,
         TopPositionDirective,
-        BottomPositionDirective
+        BottomPositionDirective,
+
+        ZIndexDirective,
+        ZDirective
     ],
     
     exports:
@@ -68,7 +75,10 @@ export { BottomPositionDirective };
         LeftPositionDirective,
         RightPositionDirective,
         TopPositionDirective,
-        BottomPositionDirective
+        BottomPositionDirective,
+
+        ZIndexDirective,
+        ZDirective
     ]
 })
 

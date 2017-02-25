@@ -11,9 +11,9 @@ import { Directive, ElementRef, Input } from '@angular/core';
 export class LeftPositionDirective
 {
     /**
-     * The distance, in pixels, from left.
+     * The distance from left.
      */
-    @Input() left: number;
+    @Input() left: string;
 
     private element: HTMLElement;
 
@@ -22,6 +22,6 @@ export class LeftPositionDirective
     }
 
     ngOnInit() {
-        this.element.style.left = this.left + "px";
+        this.element.style.left = this.left;
     }
 }
