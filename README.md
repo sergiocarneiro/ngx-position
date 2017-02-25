@@ -15,6 +15,7 @@ Along with this directives, there is also another set that allow to quickly and 
 
 * Left | Top | Right | Bottom
 * Absolute | Fixed | Relative | Static
+* Z-Index
 
 -----------
 
@@ -77,7 +78,8 @@ You can align an element on another by giving its `id` as the parameter:
 For the CSS properties directives, you just need to write their name in the HTML tag.
 In case if the property has a value, just pass it like this:
 ```html
-<div absolute [top]="5">This will position the div 5px top</div>
+<div absolute [top]="5px">This will position the div 5px top</div>
+<div [z]="2">sets the z-index to 2 (can also be written in full)</div>
 ```
 
 -----------
