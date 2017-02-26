@@ -51,9 +51,10 @@ export class AboveOfDirective extends AligmentDirective
 
     protected update()
     {
-        if (this.canMeasure())
+        let parent = this.anchor.offsetParent;
+        if (this.canMeasure() && parent)
         {
-            let parentBox = this.anchor.offsetParent.getBoundingClientRect();
+            let parentBox = parent.getBoundingClientRect();
 
             let bottom = parentBox.height - this.anchor.offsetTop;
             if (this.applyTranslation) {

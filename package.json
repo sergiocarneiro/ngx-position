@@ -1,6 +1,6 @@
 {
   "name": "angular-position",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A set of angular directives that allow to align elements according to another one's position, as well as another set that allow to quickly apply CSS positioning properties.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -19,7 +19,9 @@
     "merge2": "^1.0.2",
     "typescript": "^2.0.0"
   },
-  "scripts": {},
+  "scripts": {
+    "publish" : "git add . && git commit -m $(node -pe 'JSON.parse(process.argv[1]).version' \"$(cat package.json)\") && git push"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sergiocarneiro/angular-position.git"

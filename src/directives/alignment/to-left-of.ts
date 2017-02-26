@@ -51,9 +51,10 @@ export class ToLeftOfDirective extends AligmentDirective
 
     protected update()
     {
-        if (this.canMeasure())
+        let parent = this.anchor.offsetParent;
+        if (this.canMeasure() && parent)
         {
-            let parentBox = this.anchor.offsetParent.getBoundingClientRect();
+            let parentBox = parent.getBoundingClientRect();
 
             let right = parentBox.width - this.anchor.offsetLeft;
             if (this.applyTranslation) {
