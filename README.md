@@ -10,6 +10,9 @@ An element can be placed:
 * Below
 * To Left
 * To Right
+* To Center
+* To Center X
+* To Center Y
 
 Along with this directives, there is also another set that allow to quickly and cleanly apply CSS positioning properties:
 
