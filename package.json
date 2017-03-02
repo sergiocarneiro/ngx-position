@@ -1,7 +1,7 @@
 {
   "name": "angular-position",
-  "version": "1.1.2",
-  "description": "A set of angular directives that allow to align elements according to another one's position, as well as another set that allow to quickly apply CSS positioning properties.",
+  "version": "1.2.0",
+  "description": "A set of angular directives that allow to absolute align elements according to another one's position, as well as another set that allow to quickly apply CSS positioning properties.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "peerDependencies": {
@@ -20,7 +20,7 @@
     "typescript": "^2.0.0"
   },
   "scripts": {
-    "publish" : "git add . && git commit -m $(node -pe 'JSON.parse(process.argv[1]).version' \"$(cat package.json)\") && git push"
+    "publish" : "npm publish && git add . && git commit -m $(node -pe 'JSON.parse(process.argv[1]).version' \"$(cat package.json)\") && git push"
   },
   "repository": {
     "type": "git",
@@ -30,13 +30,15 @@
     "angular",
     "interface",
     "positioning",
+    "centering",
     "aligment",
     "element",
     "directive",
     "above",
     "below",
     "left",
-    "right"
+    "right",
+    "center"
   ],
   "author": "Sérgio Carneiro <sergio.carneiro21@gmail.com>",
   "license": "ISC",

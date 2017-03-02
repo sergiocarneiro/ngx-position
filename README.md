@@ -59,6 +59,9 @@ The order is intuitive:
 - **belowOf**: place the element **after** the anchor;
 - **toLeftOf**: place the element **before** the anchor;
 - **toRightOf**: place the element **after** the anchor;
+- **toCenterOf**: place the element **after** the anchor;
+- **toCenterXOf**: place the element **after** the anchor;
+- **toCenterYOf**: place the element **after** the anchor;
 
 Example:
 ```html
@@ -78,7 +81,7 @@ You can align an element on another by giving its `id` as the parameter:
 For the CSS properties directives, you just need to write their name in the HTML tag.
 In case if the property has a value, just pass it like this:
 ```html
-<div absolute [top]="5px">This will position the div 5px top</div>
+<div absolute [top]="'5px'">This will position the div 5px top</div>
 <div [z]="2">sets the z-index to 2 (can also be written in full)</div>
 ```
 
