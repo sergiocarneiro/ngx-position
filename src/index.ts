@@ -94,4 +94,4 @@ export { ZDirective };
     ]
 })
 
-export class AlignmentModule {}
+export class PositionModule {}
