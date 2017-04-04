@@ -1,8 +1,8 @@
-# [angular-position](https://github.com/sergiocarneiro/angular-position)
+# [ngx-position](https://github.com/sergiocarneiro/ngx-position)
 
-[![npm version](https://badge.fury.io/js/angular-position.svg)](https://www.npmjs.com/package/angular-position)
+[![npm version](https://badge.fury.io/js/ngx-position.svg)](https://www.npmjs.com/package/ngx-position)
 
-*angular-position* is a set of angular directives that allow to align elements according to another one's position, making use of absolute positioning.
+*ngx-position* is a set of angular directives that allow to align elements according to another one's position, making use of absolute positioning.
 
 An element can be placed:
 
@@ -34,16 +34,16 @@ That's why this directives were made and solve the problem with no effort.
 
 Install via npm:
 ```
-npm install --save angular-position
+npm install --save ngx-position
 ```
 
-Include the alignment module in the imports list of your app's module:
+Include the module in the imports list of your app's module:
 ```js
-import { AlignmentModule } from 'angular-position';
+import { PositionModule } from 'ngx-position';
 
 @NgModule({
     imports: [
-        AlignmentModule
+        PositionModule
     ]
 })
 ```
