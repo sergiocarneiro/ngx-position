@@ -1,6 +1,6 @@
 {
   "name": "ngx-position",
-  "version": "4.0.2",
+  "version": "4.0.0",
   "description": "A set of angular directives that allow to absolute align elements according to another one's position, as well as another set that allow to quickly apply CSS positioning properties.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
