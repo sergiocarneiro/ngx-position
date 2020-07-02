@@ -8,12 +8,12 @@
 
 // /**
 //  * Places a component in the center of the parent.
-//  * 
+//  *
 //  * Makes use of absolute positioning to achieve it.
-//  * 
+//  *
 //  * It will check the position during the first 8 seconds of initialization,
 //  * then stays static in the last position set.
-//  * 
+//  *
 //  * NOTE: if it's bigger than the parent, then this won't have any effect.
 //  */
 // export class CenterDirective extends AligmentDirective
@@ -21,7 +21,7 @@
 //     /**
 //      * The amount of time after initialization that this should be
 //      * checking the target's properties and position the element accordingly.
-//      * 
+//      *
 //      * *Defaults to 8 seconds.*
 //      */
 //     @Input() measurementDuration: number = 8000;
@@ -29,7 +29,7 @@
 //     /**
 //      * Defines if the element should adjust and re-align itself when the window size changes.
 //      */
-//     @Input() adjustOnWindow: boolean = true;
+//     @Input() adjustWithWindow: boolean = true;
 
 //     /**
 //      * Defines if the element should apply the anchor's Y translation on itself.
@@ -37,7 +37,7 @@
 //     @Input() applyTranslation: boolean = true;
 
 //     /**
-//      * Holds the values initially assigned on the component. 
+//      * Holds the values initially assigned on the component.
 //      */
 //     private initialValues: {
 //         left: string,
@@ -64,7 +64,7 @@
 //     protected update()
 //     {
 //         let parent = this.anchor.offsetParent;
-//         if (this.canMeasure() && parent)
+//         if (this.canMeasure && parent)
 //         {
 //             const parentBox = parent.getBoundingClientRect();
 //             const elementBox = this.element.getBoundingClientRect();

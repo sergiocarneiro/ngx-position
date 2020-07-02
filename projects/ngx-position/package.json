@@ -1,0 +1,36 @@
+{
+  "name": "ngx-position",
+  "version": "9.0.0",
+  "description": "A set of angular directives that allow to absolute align elements according to another one's position, as well as another set that allow to quickly apply CSS positioning properties.",
+  "peerDependencies": {
+    "@angular/common": "^9.1.11",
+    "@angular/core": "^9.1.11"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiocarneiro/ngx-position.git"
+  },
+  "keywords": [
+    "angular",
+    "interface",
+    "positioning",
+    "centering",
+    "aligment",
+    "element",
+    "directive",
+    "above",
+    "below",
+    "left",
+    "right",
+    "center"
+  ],
+  "author": "Sérgio Carneiro <sergio.carneiro21@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiocarneiro/ngx-position/issues"
+  },
+  "homepage": "https://github.com/sergiocarneiro/ngx-position#readme"
+}

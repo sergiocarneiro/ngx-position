@@ -3,31 +3,35 @@ import { Directive, ElementRef, Input } from "@angular/core";
 import { AligmentDirective } from "./aligment";
 
 @Directive({
-    selector: "[toCenterXOf]"
+    selector: "[belowOf]"
 })
 
 /**
- * Places a component aligned horizontally to another one.
- * 
+ * Places a component below another one.
+ *
  * Makes use of absolute positioning to achieve it.
- * 
+ *
  * It will check the position during the first 8 seconds of initialization,
  * then stays static in the last position set.
  */
-export class ToCenterXOfDirective extends AligmentDirective
+export class BelowOfDirective extends AligmentDirective
 {
     /**
-     * The id of the element to place this element above.
-     * 
-     * Can be empty, and if so, this will put the element centered
-     * horizontally on its **previous sibling**
+     * The id of the element to place this element below.
+     *
+     * Can be empty, and if so, this will put the element below its **previous sibling**.
      */
-    @Input() toCenterXOf: string;
+    @Input() belowOf: string;
+
+    /**
+     * Defines if the element's width will occupie the available area at the bottom of the anchor.
+     */
+    @Input() fill: boolean;
 
     /**
      * The amount of time after initialization that this should be
      * checking the target's properties and position the element accordingly.
-     * 
+     *
      * *Defaults to 8 seconds.*
      */
     @Input() measurementDuration: number = 8000;
@@ -35,10 +39,10 @@ export class ToCenterXOfDirective extends AligmentDirective
     /**
      * Defines if the element should adjust and re-align itself when the window size changes.
      */
-    @Input() adjustOnWindow: boolean = true;
+    @Input() adjustWithWindow: boolean = true;
 
     /**
-     * Defines if the element should apply the anchor's X translation on itself.
+     * Defines if the element should apply the anchor's Y translation on itself.
      */
     @Input() applyTranslation: boolean = true;
 
@@ -47,22 +51,19 @@ export class ToCenterXOfDirective extends AligmentDirective
     }
 
     ngAfterViewChecked() {
-        this.initializeForPrevious(this.toCenterXOf);
+        this.initializeForPrevious(this.belowOf);
     }
 
     protected update()
     {
-        if (this.canMeasure())
+        if (this.canMeasure)
         {
-            let anchorX = this.anchor.offsetLeft + (this.anchor.offsetWidth / 2);
-
+            let top = this.anchor.offsetTop + this.anchor.offsetHeight;
             if (this.applyTranslation) {
-                anchorX -= this.getAnchorTranslation("x");
+                top += this.getAnchorTranslation("y");
             }
 
-            let elementX = this.element.offsetLeft + (this.element.offsetWidth / 2);
-
-            this.element.style.marginLeft = anchorX - elementX + "px";
+            this.element.style.top = top + "px";
         }
     }
 }
